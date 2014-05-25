@@ -1,7 +1,7 @@
 pythonTurtleInChinese
 =====================
 
-Python turtle graphics translated intoi Chinese characters
+Python turtle graphics translated into Chinese characters
 
 `turtle_tc.py`
 
