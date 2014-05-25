@@ -10,7 +10,7 @@ Renyuan Lyu
 
 renyuan.lyu@gmail.com
 
-google.com/+RenyuanLyu
+http://google.com/+RenyuanLyu
 
 
 
