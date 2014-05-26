@@ -81,8 +81,8 @@ Renyuan Lyu
 | `ryBytedesign.py`                                    | `ryClock.py`                                     |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
 | `ryMinimal_hanoi.py`                                 | `ryTdemo_teddy.py`                               |
-| ![ryYinyang](./examples/ryYinyang.png)               |  ![ryTdemo_sun_and_inner_planets](./examples/ryTdemo_sun_and_inner_planets.mp4)  |
-| `ryYinyang.py`                                       |  `ryTdemo_sun_and_inner_planets.py`              |
+| ![ryYinyang](./examples/ryYinyang.png)               |  ![ryTdemo_sun_and_inner_planets](http://youtu.be/zI4qM9SFCNQ)  |
+| `ryYinyang.py`                                       |  `<ryTdemo_sun_and_inner_planets.py>`__              |
 
 ### an experimental documenting system
 
