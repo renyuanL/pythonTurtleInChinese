@@ -81,14 +81,14 @@ Renyuan Lyu
 | `ryBytedesign.py`                                    | `ryClock.py`                                     |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
 | `ryMinimal_hanoi.py`                                 | `ryTdemo_teddy.py`                               |
-| ![ryYinyang](./examples/ryYinyang.png)               |                                                  |
-| `ryYinyang.py`                                       |                                                  |
+| ![ryYinyang](./examples/ryYinyang.png)               |  ![ryTdemo_teddy](./examples/ryTdemo_sun_and_inner_planets.mp4)  |
+| `ryYinyang.py`                                       |  `ryTdemo_sun_and_inner_planets.py`              |
 
 ### an experimental documenting system
 
-![a help for a chinese name of function 前進](./help_on_forward.PNG)  
+![a help for a chinese name of function 前進](./examples/help_on_forward.PNG)  
 
-(A screenshot showing an help for a chinese name of function 前進 in Python IDLE)
+(A screenshot showing help on a chinese name of function 前進 in Python IDLE)
 
 
 ============================
