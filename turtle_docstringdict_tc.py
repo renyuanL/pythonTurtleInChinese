@@ -1,17 +1,24 @@
-﻿#
-# Translated by Renyuan Lyu, in Taoyuan, Taiwan.
-# renyuan.lyu@gmail.com 
-# google.com/+Renyuan.lyu
+﻿'''
+turtle_docstringdict_tc.py
+a doc file for turtle_tc.py
+'''
 #
+# Translated automatically by Google Tranlator,
+# Modified partially by Renyuan Lyu, in Taoyuan, Taiwan.
+#
+# renyuan.lyu@gmail.com 
+# http://google.com/+RenyuanLyu
+#
+
 docsdict = {
 
 'Turtle.back':
-        '''後退，一段距離。
+        '''後退 一段距離。
 
         別名: 後退 | back | backward | bk
 
         參數:
-        距離 -- 一個數字
+        距離, distance -- 一個數字
 
         龜向後移動一段距離，方向為目前龜頭的反方向。
         不改變目前龜頭的方向。
