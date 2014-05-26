@@ -1,7 +1,7 @@
 pythonTurtleInChinese
 =====================
 
-Python turtle graphics translated into Chinese characters
+Python turtle graphics translated into Chinese characters, using Python 3
 
 `turtle_tc.py`
 
@@ -83,6 +83,12 @@ Renyuan Lyu
 | `ryMinimal_hanoi.py`                                 | `ryTdemo_teddy.py`                               |
 | ![ryYinyang](./examples/ryYinyang.png)               |                                                  |
 | `ryYinyang.py`                                       |                                                  |
+
+### an experimental documenting system
+
+![a help for a chinese name of function 前進](./help_on_forward.PNG)  
+
+(A screenshot showing an help for a chinese name of function 前進 in Python IDLE)
 
 
 ============================
