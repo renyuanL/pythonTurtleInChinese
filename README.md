@@ -3,7 +3,7 @@ pythonTurtleInChinese
 
 Python turtle graphics translated into Chinese characters, using Python 3
 
-`turtle_tc.py`
+[turtle_tc.py](./turtle_tc.py)
 
 <hr>
 Renyuan Lyu  
