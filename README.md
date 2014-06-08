@@ -80,10 +80,10 @@ Renyuan Lyu
 | ![ryBytedesign](./examples/ryBytedesign.png)         | ![ryClock](./examples/ryClock.png)               |
 | `ryBytedesign.py`                                    | `ryClock.py`                                     |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
-| `ryMinimal_hanoi.py`                                 | `ryTdemo_teddy.py`                               |
+| `ryMinimal_hanoi.py`                                 | `./examples/ryTdemo_teddy.py`                               |
 <<<<<<< HEAD
 | ![ryYinyang](./examples/ryYinyang.png)               | ![ryTdemo_sun_and_inner_planets](http://youtu.be/zI4qM9SFCNQ)  |
-| `ryYinyang.py`                                       | `ryTdemo_sun_and_inner_planets.py`              |
+| `ryYinyang.py`                                       | `./examples/ryTdemo_sun_and_inner_planets.py`              |
 =======
 | ![ryYinyang](./examples/ryYinyang.png)               |                                                  |
 | `ryYinyang.py`                                       |                                                  |
