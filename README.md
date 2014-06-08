@@ -78,16 +78,12 @@ Renyuan Lyu
 |                                                      |                                                  |
 |------------------------------------------------------|--------------------------------------------------|
 | ![ryBytedesign](./examples/ryBytedesign.png)         | ![ryClock](./examples/ryClock.png)               |
-| `./examples/ryBytedesign.py`                                    | `./examples/ryClock.py`                                     |
+| `./examples/ryBytedesign.py`                         | `./examples/ryClock.py`                          |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
-| `./examples/ryMinimal_hanoi.py`                                 | `./examples/ryTdemo_teddy.py`                               |
-<<<<<<< HEAD
-| ![ryYinyang](./examples/ryYinyang.png)               | ![ryTdemo_sun_and_inner_planets](http://youtu.be/zI4qM9SFCNQ)  |
-| `./examples/ryYinyang.py`                                       | `./examples/ryTdemo_sun_and_inner_planets.py`              |
-=======
-| ![ryYinyang](./examples/ryYinyang.png)               |                                                  |
-| `./examples/ryYinyang.py`                                       |                                                  |
->>>>>>> aa0205d0fc467302af9410cabdb3afdf45151589
+| `./examples/ryMinimal_hanoi.py`                      | `./examples/ryTdemo_teddy.py`                    |
+| ![ryYinyang](./examples/ryYinyang.png)               |  |
+| `./examples/ryYinyang.py`                      |  |
+
 
 ### an experimental documenting system
 
