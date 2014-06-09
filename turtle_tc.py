@@ -10,29 +10,29 @@ google.com/+RenyuanLyu
 
 
 
-Inspired by the MIT Scratch project, 
+Inspired by the MIT Scratch project,
 a program language capable of supporting programmers' native language ,
 will allow more people ( particularly non-English-speaking kids ) able to write the program more fluently.
 
 Starting from Python version 3.0 ,  names of variables, functions, and classes  are encoded in utf-8 ,
-that is to say, programmers can write programs in their mother languages. 
+that is to say, programmers can write programs in their mother languages.
 I think this will be a key point to make Python overspread even broader and broader.
 
-As long as we can get into many python's modules, provide a set of name aliases for each class, method, and import global variables, then kids or naive people can also write their own programs. Kids include those from K to 12 in non-English-speaking countries, who are not fluent nor possess enough vocabulary in English. 
+As long as we can get into many python's modules, provide a set of name aliases for each class, method, and import global variables, then kids or naive people can also write their own programs. Kids include those from K to 12 in non-English-speaking countries, who are not fluent nor possess enough vocabulary in English.
 
 This program/module implementing the idea is one of the few first tries,
-it is an appendix to the Python built-in modules turtle.py, 
+it is an appendix to the Python built-in modules turtle.py,
 which is majorly a bunch of traditional Chinese alias of English name.
 
 This file is named as turtle_tc.py, to emphasize it is majorly in traditional Chinese.
 
-Similar modification can be made to make it suitable in any non-English language. 
+Similar modification can be made to make it suitable in any non-English language.
 
-This file can be run by itself, 
-it can also be put in the path of Python library, 
+This file can be run by itself,
+it can also be put in the path of Python library,
 and be imported by the other application of turtle programs
 
-To use Chinese names could not only make the program more readable for local Chinese speaking programmers, 
+To use Chinese names could not only make the program more readable for local Chinese speaking programmers,
 it could also make the program more compact, dense and beautiful.
 
 Renyuan Lyu
@@ -312,19 +312,23 @@ classBeChanged= ['TurtleScreenBase', 'TurtleScreen', 'TNavigator', 'TPen', 'RawT
 #
 # 印出 物類內 別名表，可供 程式員 參考，以及作為 自動翻譯 的依據
 #
-for y in classBeChanged:
-    cList= 'cList'+y
-    ec= eval(cList)
+def 印出物類內別名表():
+    global classBeChanged
 
-    print('\n'+'-'*20)
-    print('class ', y)
-    print('-'*20+'\n')
+    for y in classBeChanged:
+        cList= 'cList'+y
+        ec= eval(cList)
 
-    for x in ec:
-        print(x)
+        print('\n'+'-'*20)
+        print('class ', y)
+        print('-'*20+'\n')
 
-print('='*60+'\n')
+        for x in ec:
+            print(x)
 
+    print('='*60+'\n')
+
+#印出物類內別名表()
 
 
 
@@ -455,8 +459,6 @@ for e in 別名表:
 exec(aCmd)
 
 
-
-
 中英對照表=[
     cListTurtleScreenBase,
     cListTurtleScreen,
@@ -470,17 +472,19 @@ exec(aCmd)
     函數別名表
     ]
 
-print('-'*20)
-print('中英對照表')
-print('-'*20)
+def 印中英對照表():
 
-i= 0
-for x in 中英對照表:
-    for y in x:
-        print(i,y)
-        i+=1
+    print('-'*20)
+    print('中英對照表')
+    print('-'*20)
 
+    i= 0
+    for x in 中英對照表:
+        for y in x:
+            print(i,y)
+            i+=1
 
+#印中英對照表()
 
 #
 #
@@ -692,10 +696,15 @@ for x in 別名表:
 __all__ += ['中英對照表']
 
 #'''
-print('-'*10)
-print('可用的詞彙別名表')
-print('-'*10)
-print('__all__= ',sorted(__all__))
+def 印可用的詞彙別名表():
+
+    print('-'*10)
+    print('可用的詞彙別名表')
+    print('-'*10)
+    print('__all__= ',sorted(__all__))
+
+#印可用的詞彙別名表():
+
 #'''
 
 #
@@ -804,12 +813,42 @@ def 展示02():
     主迴圈()
 
 
+
+
+def 陰陽():
+
+    def 半陰陽(半徑, 色1, 色2):
+
+        形狀(龜形); 大小(2);
+        顏色(色1, 色2); 開始填色();
+        畫圓(半徑/2, 180); 畫圓(半徑, 180); 左轉(180); 畫圓(-半徑/2, 180);
+        結束填色()
+
+        左轉(90); 提筆(); 前進(半徑/3); 右轉(90); 下筆();
+        顏色(色2, 色1); 開始填色();
+        畫圓(半徑/6);
+        結束填色()
+
+        左轉(90); 提筆(); 後退(半徑/3);左轉(90); 下筆();
+
+    重設(); 半陰陽(200,  白, 黑);  半陰陽(200,  黑, 白);
+
+    提筆();前往(-幕寬()/2,0); 顏色(藍); 寫(ip.getsource(陰陽))
+
+    進入主迴圈()
+
+    return "完成!"
+
+demo= 展示=  陰陽
+
 if __name__ == "__main__":
 
     #展示00_程序性程式設計()
     #展示01_物件導向程式設計()
 
-    展示02()
+    #展示02()
+
+    展示()
 
     pass
 

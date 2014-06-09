@@ -129,4 +129,18 @@ import turtle
 
 進而，運用中文來寫基於 龜 的作圖程式，就成為可能。
 
+安裝之法：
+下載本模組並解壓縮後，在本模組所在目錄下，
+執行 
 
+python setup.py install
+
+即可，
+注意： 本模組僅在 python 3.x 的環境下運作。
+
+測試安裝成功與否：在 python 提示號 >>>之下，打入以下指令。
+
+>>> import turtle_tc
+>>> turtle_tc.demo()
+
+即可看到 龜 畫太極圖。
