@@ -78,11 +78,11 @@ Renyuan Lyu
 |                                                      |                                                  |
 |------------------------------------------------------|--------------------------------------------------|
 | ![ryBytedesign](./examples/ryBytedesign.png)         | ![ryClock](./examples/ryClock.png)               |
-| `./examples/ryBytedesign.py`                         | `./examples/ryClock.py`                          |
+| `./examples_tc/ryBytedesign.py`                         | `./examples_tc/ryClock.py`                          |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
-| `./examples/ryMinimal_hanoi.py`                      | `./examples/ryTdemo_teddy.py`                    |
+| `./examples_tc/ryMinimal_hanoi.py`                      | `./examples_tc/ryTdemo_teddy.py`                    |
 | ![ryYinyang](./examples/ryYinyang.png)               |  |
-| `./examples/ryYinyang.py`                      |  |
+| `./examples_tc/ryYinyang.py`                      |  |
 
 
 ### an experimental documenting system
@@ -134,6 +134,7 @@ import turtle
 執行 
 
 python setup.py install
+-----------------------
 
 即可，
 注意： 本模組僅在 python 3.x 的環境下運作。
@@ -141,6 +142,7 @@ python setup.py install
 測試安裝成功與否：在 python 提示號 >>>之下，打入以下指令。
 
 >>> import turtle_tc
+
 >>> turtle_tc.demo()
 
 即可看到 龜 畫太極圖。
