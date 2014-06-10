@@ -146,3 +146,6 @@ python setup.py install
 >>> turtle_tc.demo()
 
 即可看到 龜 畫太極圖。
+
+![turtle_tc.demo](./examples/turtle_tc.demo.png)
+
