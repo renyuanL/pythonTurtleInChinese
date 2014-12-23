@@ -1,8 +1,10 @@
-﻿'''
+'''
 turtle_tc.py
 
 Renyuan Lyu
-2014/05/25
+2014/05/25,
+
+last updated: 2014/12/24
 
 renyuan.lyu@gmail.com
 google.com/+RenyuanLyu
@@ -89,13 +91,33 @@ import turtle
 
 
 
+last updated: 2014/12/24
 
 '''
+#
+# The following are imported in turtle.py originally
+# they will not be imported automatically using 
+#
+# from turtle import *
+#
+# so we need include them here
+#
 
+import tkinter as TK
+import types
 import math
 import time
+import inspect
+import sys
+
+from os.path import isfile, split, join
+from copy import deepcopy
+from tkinter import simpledialog
+
+# ############################################
+
+
 import random
-import os
 
 
 #'''
@@ -114,9 +136,6 @@ from ryTurtle import TurtleScreenBase, TurtleScreen, TNavigator, TPen, RawTurtle
 
 
 import inspect as ip
-
-
-import math
 import random as rd
 
 '''
@@ -132,21 +151,21 @@ import random as rd
 
 
 cListTurtleScreenBase=[
-('TurtleScreenBase', '龜幕基類', '烏龜螢幕地基類', 'guimujilei'),
-('mainloop'  ,   '主迴圈', '進入主迴圈', '做完了', '點擊X結束', '等待閉幕', '閉幕',  'zhuhuiquan'),
-('numinput'  ,   '輸入數字',    'shurushuzi'),
-('textinput' ,   '輸入文字',    'shuruwenzi'),
+('TurtleScreenBase', '龜幕基類', '烏龜螢幕地基類'),
+('mainloop'  ,   '主迴圈', '進入主迴圈', '做完了', '點擊X結束', '等待閉幕', '閉幕'),
+('numinput'  ,   '輸入數字'),
+('textinput' ,   '輸入文字'),
 ]
 
 
 
 cListTurtleScreen=[
-('TurtleScreen',                '龜幕類', '烏龜螢幕類', 'guimulei'),
+('TurtleScreen',                '龜幕類', '烏龜螢幕類'),
 
-('addshape',                    '加形狀',  'jiaxingzhuang'),
-('bgcolor',                     '背景色',  'beijingse'),
-('bgpic',                       '背景圖',  'beijingtu'),
-('clear',                       '清除',   'cingchu'),
+('addshape',                    '加形狀'),
+('bgcolor',                     '背景色'),
+('bgpic',                       '背景圖'),
+('clear',                       '清除'),
 ('clearscreen',                 '清除幕'),
 ('colormode',                   '色模式'),
 ('delay',                       '延遲'),
@@ -179,20 +198,20 @@ cListTurtleScreen=[
 
 
 cListTNavigator= [
-('TNavigator', '龜行類', '烏龜航行類','guixinglei'),
+('TNavigator', '龜行類', '烏龜航行類'),
 
-('reset',                       '重設','chongshe'),
-('forward',                     '前進','qianjin'),
-('back',                        '後退','houtui'),
-('right',                       '右轉','youzhuan'),
-('left',                        '左轉','zuozhuan'),
-('pos',                         '位置','weizhi'),
-('goto',                        '前往', '設位置', '去到','qianwang'),
-('setheading',                  '設頭向','shetouxiang'),
-('home',                        '回家','huijia'),
+('reset',                       '重設'),
+('forward',                     '前進'),
+('back',                        '後退'),
+('right',                       '右轉'),
+('left',                        '左轉'),
+('pos',                         '位置'),
+('goto',                        '前往', '設位置', '去到'),
+('setheading',                  '設頭向'),
+('home',                        '回家'),
 
-('circle',                      '畫圓', '圓','huayuan'),
-('speed',                       '速度','sudu'),
+('circle',                      '畫圓', '圓'),
+('speed',                       '速度'),
 
 ('degrees',                     '角度','設角為度', '設圓為360度', '設角的單位為角度'),
 ('radians',                     '弳度', '弧度' ,'半徑數', '設角為弧', '設角的單位為半徑數', '設圓為2pi弧'),
@@ -473,19 +492,27 @@ exec(aCmd)
     函數別名表
     ]
 
+X=[]
+
+for y in 中英對照表:
+	for x in y:
+		X += [x]
+
+中英對照表= sorted(X)
+
 def 印中英對照表():
 
     print('-'*20)
     print('中英對照表')
     print('-'*20)
 
-    i= 0
-    for x in 中英對照表:
-        for y in x:
-            print(i,y)
-            i+=1
+    for i,x in enumerate(中英對照表):
+            print(i,x)
 
-#印中英對照表()
+if __name__=='__main__':
+	印中英對照表()
+
+
 
 #
 #
@@ -700,11 +727,12 @@ __all__ += ['中英對照表']
 def 印可用的詞彙別名表():
 
     print('-'*10)
-    print('可用的詞彙別名表')
+    print('可用的詞彙別名表 (中英對照表)')
     print('-'*10)
     print('__all__= ',sorted(__all__))
 
-#印可用的詞彙別名表():
+if __name__=='__main__':
+	印可用的詞彙別名表()
 
 #'''
 
@@ -760,6 +788,8 @@ def 展示01_物件導向程式設計():
     W= 100
     幕.設座標系統(-W,-W,W,W)
 
+    彩虹= [紅,橙,黃,綠,青,藍,紫]
+    
     for i in 範圍(7):
 
         龜= 烏龜類()
@@ -845,12 +875,13 @@ demo= 展示=  陰陽
 
 if __name__ == "__main__":
 
-    #展示00_程序性程式設計()
-    #展示01_物件導向程式設計()
-
-    #展示02()
-
     展示()
+    
+    展示00_程序性程式設計()
+
+    展示01_物件導向程式設計()
+
+    展示02()
 
     pass
 
