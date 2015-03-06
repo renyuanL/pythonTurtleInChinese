@@ -78,11 +78,11 @@ Renyuan Lyu
 |                                                      |                                                  |
 |------------------------------------------------------|--------------------------------------------------|
 | ![ryBytedesign](./examples/ryBytedesign.png)         | ![ryClock](./examples/ryClock.png)               |
-| `./examples_tc/ryBytedesign.py`                         | `./examples_tc/ryClock.py`                          |
+| `./examples_tc/ryBytedesign.py`                      | `./examples_tc/ryClock.py`                       |
 | ![ryMinimal_hanoi](./examples/ryMinimal_hanoi.png)   | ![ryTdemo_teddy](./examples/ryTdemo_teddy.png)   |
-| `./examples_tc/ryMinimal_hanoi.py`                      | `./examples_tc/ryTdemo_teddy.py`                    |
-| ![ryYinyang](./examples/ryYinyang.png)               |  |
-| `./examples_tc/ryYinyang.py`                      |  |
+| `./examples_tc/ryMinimal_hanoi.py`                   | `./examples_tc/ryTdemo_teddy.py`                 |
+| ![ryYinyang](./examples/ryYinyang.png)               |   |
+| `./examples_tc/ryYinyang.py`                         |   |
 
 
 ### an experimental documenting system

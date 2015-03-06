@@ -238,8 +238,13 @@ exec(aCmd)
 X=[]
 
 for y in 總別名表:
+<<<<<<< HEAD
     for x in y:
         X += [x]
+=======
+	for x in y:
+		X += [x]
+>>>>>>> origin/master
 
 中英對照表= sorted(X)
 
@@ -253,7 +258,11 @@ def 印中英對照表():
             print(i,x)
 
 if __name__=='__main__':
+<<<<<<< HEAD
     印中英對照表()
+=======
+	印中英對照表()
+>>>>>>> origin/master
 
 
 
@@ -468,7 +477,11 @@ __tcAll__ += methodPutToMain
 #from turtle import _CFG, _Screen, _Root, TK, _TurtleImage, Tbuffer, TurtleGraphicsError
 #from turtle import TurtleScreenBase, TurtleScreen, TNavigator, TPen, RawTurtle, Canvas #, Turtle, Screen
 
+<<<<<<< HEAD
 __tcAll__ += ['向量類', '形狀類', '龜幕基類', '龜幕類','龜行類','龜筆類','原生龜類', 'TK'] # 2014/12/30, 處理 two_canvases_tc.py 時遇到！
+=======
+__tcAll__ += ['龜幕基類', '龜幕類','龜行類','龜筆類','原生龜類', 'TK'] # 2014/12/30, 處理 two_canvases_tc.py 時遇到！
+>>>>>>> origin/master
 
 for x in 別名表:
     for y in x[1:]:
@@ -497,7 +510,11 @@ def 印可用的詞彙別名表():
     print('__all__= ',sorted(__all__))
 
 if __name__=='__main__':
+<<<<<<< HEAD
     印可用的詞彙別名表()
+=======
+	印可用的詞彙別名表()
+>>>>>>> origin/master
 
 #'''
 
@@ -553,8 +570,16 @@ if __name__ == '__main__':
     
     # 物件導向
     龜1= 陰陽龜類((200,200))
+<<<<<<< HEAD
     '''
     龜2= 陰陽龜類((-200,+200))
     龜3= 陰陽龜類((-200,-200))
     龜4= 陰陽龜類((+200,-200))
     '''
+=======
+    '''
+    龜2= 陰陽龜類((-200,+200))
+    龜3= 陰陽龜類((-200,-200))
+    龜4= 陰陽龜類((+200,-200))
+    '''
+>>>>>>> origin/master

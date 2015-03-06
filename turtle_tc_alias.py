@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿'''
+=======
+'''
+>>>>>>> origin/master
 
 turtle_tc_alias.py
 
@@ -208,7 +212,11 @@ cListShape=[
 ]
 
 cListVec2D=[
+<<<<<<< HEAD
 ('Vec2D', '向量類', '二維向量類'),
+=======
+('Vec2D', '二維向量類'),
+>>>>>>> origin/master
 ('rotate', '旋轉')
 
 ]
@@ -275,7 +283,11 @@ cListVec2D=[
  ('ScrolledCanvas',     '可捲畫布類'),
  ('Shape',              '形狀類'),
  ('TurtleScreen',       '龜幕類'),
+<<<<<<< HEAD
  ('Vec2D',              '向量類', '二維向量類', '向量2D類'),
+=======
+ ('Vec2D',              '二維向量類', '向量2D類'),
+>>>>>>> origin/master
 
  ('Turtle', '龜類', '生龜','生一隻龜', 'Pen', '筆類'), # 2015/01/03 # Pen 與 Turtle 需產生連結。
  ('Screen', '幕類', '開幕')
