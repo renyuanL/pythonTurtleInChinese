@@ -3,7 +3,7 @@
 setup(
         name=         'turtle_tc',
 
-        py_modules=   ['turtle_tc', 'turtle_docstringdict_tc', 'examples_tc.ryYinyang'],
+        py_modules=   ['turtle_tc', 'turtle_tc_alias',  'turtle_docstringdict_tc', 'examples_tc.ryYinyang'],
 
         version=      '0.1',
         description=  '繁體中文龜 turtle for traditional Chinese）',
